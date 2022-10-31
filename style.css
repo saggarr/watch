@@ -1,0 +1,143 @@
+/* orbitron font import */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+/* for all body */
+*{
+    background-color: rgb(53, 53, 53);
+    font-family: orbitron;
+}
+
+/* main section */
+.myWatchSection{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    top: 20%;
+    left: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(53, 53, 53);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.myWatchDiv{
+    background-color: rgb(53, 53, 53);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myTimeDiv{
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    align-items: baseline;
+}
+.myDateDiv{
+    background-color: rgb(53, 53, 53);
+}
+.hourSpan{
+    font-size: 80px;
+    border-radius: 10px;
+    background-color: tomato;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    
+}
+.minuteSpan{
+    font-size: 80px;
+    border-radius: 10px;
+    background-color: rgb(21, 206, 33);
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+}
+.secondSpan{
+    font-size: 80px;
+    border-radius: 10px;
+    background-color: rgb(200, 215, 24);
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+}
+.am_pmSpan{
+    font-size: 30px;
+    background-color: rgb(53, 53, 53);
+    color: rgb(190, 190, 190);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.daynameSpan{
+    font-size: 30px;
+    background-color: rgb(53, 53, 53);
+    color: rgb(190, 190, 190);
+    border-radius: 5px;
+}
+.monthname_dateSpan{
+    font-size: 30px;
+    background-color: rgb(53, 53, 53);
+    color: rgb(190, 190, 190);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* media quries */
+/*mobile view*/
+@media(max-width: 768px){
+    .myWatchSection{
+        width: 87%;
+        height: 90%;
+        top: 1%;
+        bottom: 1%;
+        left: 1%;
+        padding: 20px 20px;
+    }
+    .myTimeDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .myDateDiv{
+        background-color: rgb(53, 53, 53);
+    }
+    .hourSpan{
+        margin-top: 20px;
+    }
+    .minuteSpan{
+        margin-top: 20px;
+    }
+    .secondSpan{
+        margin-top: 20px;
+    }
+    .am_pmSpan{
+        margin-top: 20px;
+    }
+    .monthname_dateSpan{
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+}
+
+
+/*desktop view*/
+@media(min-width:1080px){
+}
+
+
+/*tablet view*/
+@media(min-width:769px) and (max-width:1024px){
+    .myWatchSection{
+        width: 94%;
+        height: 95%;
+        top: 1%;
+        bottom: 1%;
+        left: 1%;
+        padding: 20px 20px;
+    }
+}
